@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{memoir}
+\usepackage{graphicx}
+\usepackage{tabu}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage[export]{adjustbox}
+
+\setstocksize{2in}{3.5in}
+\setpagecc{2in}{3.5in}{*}
+\settypeblocksize{1.9in}{3.4in}{*}
+\setulmargins{.05in}{*}{*}
+\setlrmargins{.05in}{*}{*}
+\setheadfoot{0.1pt}{0.1pt}
+\setheaderspaces{1pt}{*}{*}
+
+\checkandfixthelayout[fixed]
+
+\pagestyle{empty}
+
+% reference: https://www.overleaf.com/latex/examples/mailmerged-business-cards/gnnhcjvkvcfd
+
+\begin{document}
+\noindent
+\begin{minipage}[t][][b]{.3\textwidth}
+	\centering
+	% \vspace{.05in}
+	\includegraphics[valign=c,width=\linewidth]{headshot} % picture
+\end{minipage}%
+\begin{minipage}[t][][b]{.7\textwidth}
+	\centering
+	\hfill\break
+	\hfill\break
+	Adam J Orr
+
+	Ph.D. Candidate
+
+	Arizona State University
+
+	\faEnvelopeO \space adamjorr@gmail.com
+
+	\faLink \space \texttt{www.adamjorr.com}
+\end{minipage}%
+\vfill
+\clearpage
+\end{document}
